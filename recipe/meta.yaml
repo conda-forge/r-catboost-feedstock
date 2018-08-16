@@ -39,4 +39,9 @@ about:
 
 extra:
   recipe-maintainers:
+    - johanneskoester
+    - bgruening
+    - daler
+    - jdblischak
+    - cbrueffer
     - curious-odd-man
