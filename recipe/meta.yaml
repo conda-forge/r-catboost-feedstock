@@ -1,21 +1,21 @@
 {% set name = "r-catboost" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "8840153d46ba6606011452565f3d00875adbccf4f55fb611eea5bd9af4e8a478" %}  # [unix]
-{% set sha256 = "2d5b80aa2e9f6a0582b7a2a64732bc0fb858d14b656d51baadfc50a4168d4f81" %}  # [win]
-{% set sha256 = "d0e52a0086719fdb74d59d109906ee580e7e0806642ce9db7fa5aec1dace5ade" %}  # [osx]
+{% set version = "0.9.1.1" %}
+{% set sha256 = "50a5a01aeb178baf4a1b88f18559f44315983e6356731dd9764e25b78256800d" %}  # [unix]
+{% set sha256 = "46e7e0f84f10abb71e5db4669ed8e5ae8ab3811547166e911dc9aaec32d4c85a" %}  # [win]
+{% set sha256 = "5d9e0567f7a23272c076c42af9739bc18ee7ec4c05c31ab0a6369a4142629c86" %}  # [osx]
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tar  # [unix]
+  url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tgz  # [unix]
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Windows-{{ version }}.tgz  # [win]
-  url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tar  # [osx]
+  url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
   sha256: {{ sha256 }}
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -45,3 +45,4 @@ extra:
     - jdblischak
     - cbrueffer
     - curious-odd-man
+    - dbast
