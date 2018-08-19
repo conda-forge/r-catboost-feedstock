@@ -1,1 +1,3 @@
-R -e 'devtools::install()'
+#!/bin/sh
+
+$R -e 'devtools::install()'
