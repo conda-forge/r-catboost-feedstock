@@ -1,8 +1,8 @@
 {% set name = "r-catboost" %}
-{% set version = "0.9.1.1" %}
-{% set sha256 = "50a5a01aeb178baf4a1b88f18559f44315983e6356731dd9764e25b78256800d" %}  # [unix]
-{% set sha256 = "46e7e0f84f10abb71e5db4669ed8e5ae8ab3811547166e911dc9aaec32d4c85a" %}  # [win]
-{% set sha256 = "5d9e0567f7a23272c076c42af9739bc18ee7ec4c05c31ab0a6369a4142629c86" %}  # [osx]
+{% set version = "0.10.4" %}
+{% set sha256 = "1419333fdfdf9a89397016a8c36f627c659bada1ccb89e39d68f895a732ba536" %}  # [unix]
+{% set sha256 = "9b58c4e821081940ddf73c0ab68d341b68a277673581c0ed319753cbaadd01ef" %}  # [win]
+{% set sha256 = "0cba6fbf4483440c39b18c3c9e164c34e5954543c8416020a36fbb80101fd3bd" %}  # [osx]
 
 package:
   name: {{ name|lower }}
