@@ -12,8 +12,8 @@ environment:
     - CONFIG: win_r_base3.4.1
       CONDA_INSTALL_LOCN: C:\Miniconda36-x64
 
-    #- CONFIG: win_r_base3.5.1
-    #  CONDA_INSTALL_LOCN: C:\Miniconda36-x64
+    - CONFIG: win_r_base3.5.1
+      CONDA_INSTALL_LOCN: C:\Miniconda36-x64
 
 
 # We always use a 64-bit machine, but can build x86 distributions
