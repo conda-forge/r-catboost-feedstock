@@ -1,3 +1,3 @@
 #!/bin/sh
 
-$R -e 'devtools::install()'
+$R CMD INSTALL --build .

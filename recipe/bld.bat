@@ -1,3 +1,2 @@
-"%R%" -e "devtools::build()"
-"%R%" -e "devtools::install()"
+"%R%" CMD INSTALL --build .
 IF %ERRORLEVEL% NEQ 0 exit 1
