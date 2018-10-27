@@ -4,6 +4,8 @@
 {% set sha256 = "9b58c4e821081940ddf73c0ab68d341b68a277673581c0ed319753cbaadd01ef" %}  # [win]
 {% set sha256 = "0cba6fbf4483440c39b18c3c9e164c34e5954543c8416020a36fbb80101fd3bd" %}  # [osx]
 
+{% set posix = 'm2-' if win else '' %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -19,10 +21,15 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+
+  host:
     - r-base
-    - r-devtools
+    - r-jsonlite
+
   run:
     - r-base
+    - r-jsonlite
 
 test:
  commands:
