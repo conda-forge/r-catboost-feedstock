@@ -14,8 +14,9 @@ Summary: CatBoost is a machine learning algorithm that uses gradient boosting on
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-catboost-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-catboost-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-catboost-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-catboost-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-catboost-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-catboost-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-catboost-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-catboost-feedstock/branch/master)
 
 Current release info
 ====================
