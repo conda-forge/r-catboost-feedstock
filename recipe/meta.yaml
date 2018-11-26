@@ -17,11 +17,11 @@ source:
   sha256: 7a44913a173dd43acd303c2985444295ca01520eff295c41e3319ee94a9afe3c  # [osx]
 
 build:
-  noarch: generic
-  number: 1000
+  number: 1001
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
   host:
     - r-base
     - r-jsonlite
