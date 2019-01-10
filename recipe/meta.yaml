@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tgz  # [linux]
-  sha256: 05f7bd4811dded166d5e6448f825d459411dc7910d450b2a59f525bad42f3f1c  # [linux]
+  sha256: 9c3d3edfc7e2076b25f9b7d45f5536eae59235d84304813eba21b5555d70d514  # [linux]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Windows-{{ version }}.tgz  # [win]
-  sha256: f36c1d5a9da8a3110e539e356c2515e1ff4193753f0ad5166d33ec0d8a38edef  # [win]
+  sha256: 14bbf8c5051f1c76bbab89a4783a4f595bf7d374d8392bc4d2ed7cc17f1c2d3a  # [win]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
-  sha256: 4df03f16873ffb988bca0b45802073c189a3d2a11c32be672c11a8e4f2f80e53  # [osx]
+  sha256: 4bdc6edf722ba675454bf7674da6ae6f5bfe1d2bd073795424ecc3ff214b33ab  # [osx]
 
 build:
   number: 1000
