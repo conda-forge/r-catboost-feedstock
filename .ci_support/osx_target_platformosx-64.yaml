@@ -19,7 +19,3 @@ r_base:
 - 3.5.1
 target_platform:
 - osx-64
-zip_keys:
-- - channel_sources
-  - channel_targets
-  - build_number_decrement

@@ -13,8 +13,3 @@ r_base:
 - 3.5.1
 target_platform:
 - linux-64
-zip_keys:
-- - channel_sources
-  - channel_targets
-  - docker_image
-  - build_number_decrement
