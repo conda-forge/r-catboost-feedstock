@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tgz  # [linux]
-  sha256: eda8ffdcdf01908e45ed00c1af671f8082087576c930cbfb30f45188d7af7de4  # [linux]
+  sha256: 62e34bc8907fee13e8a9224201d5b948258cde1b63f4fa243e13c05d3723d694  # [linux]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Windows-{{ version }}.tgz  # [win]
-  sha256: 9fbbab155d2898aabedfd7d94153efd0903eb21473087a1ee69d917c9f995461  # [win]
+  sha256: 5e410990938fb0476b19836130e03bcc805f009c40615791d751f4edee270946  # [win]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
-  sha256: 209e5288165b0fdc6ac65a549904e652b2298dd35eb659e62ff93742e726dfb2  # [osx]
+  sha256: 30e9c03e2214e6da719f64d775c9a308dd3af3f3ab8cfa92ccb437dfabd3adcc  # [osx]
 
 build:
   number: 0
@@ -45,10 +45,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+    - conda-forge/r
     - curious-odd-man
-    - dbast
