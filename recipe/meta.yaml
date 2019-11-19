@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "0.19" %}
+{% set version = "0.19.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tgz  # [linux]
-  sha256: 6ed72ff6c1174dd9f28def50675552635a962e650bee27f8eda75591959e5d9d  # [linux]
+  sha256: 77e3f2602f5d49499b498b304d2a5b6285c1c43bfe02be9c59ea93d045853ad3  # [linux]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Windows-{{ version }}.tgz  # [win]
-  sha256: 6492d48ec9ffe9316abbe06dde0c8e51758936aefef1a35c918846186efc804f  # [win]
+  sha256: 1320d5b53400598cc67e10cbfd21c69b86ffc54ba5e94c12e5e00ab6b0f75545  # [win]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
-  sha256: d3eab8cb2a8bdc062ecb2ceb6b9aec267e6b7df0289c383e4271de2077facd19  # [osx]
+  sha256: 098348569ee7ff1b5bad0c40ac9e19214ff98f8482b5a26c7056f2f86c7f61f4  # [osx]
 
 build:
   number: 0
@@ -22,12 +22,9 @@ build:
 requirements:
   build:
     - {{posix}}zip               # [win]
-    # dummy requirement
-    - make                       # [linux]
   host:
     - r-base
     - r-jsonlite
-
   run:
     - r-base
     - r-jsonlite
