@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "0.20.2" %}
+{% set version = "0.23" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -8,20 +8,20 @@ package:
 
 source:
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tgz  # [linux]
-  sha256: 4b7ae2c855cf4ea47b0cdb7c020543d5af312bd63b9a8ef486203806a8b4db54  # [linux]
+  sha256: 9babc69059bd880db39d410722053f8bdd142c7d2731fe95f28fb7757fc588a4  # [linux]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Windows-{{ version }}.tgz  # [win]
-  sha256: bbe816f6603890bdd75d96d7554159f2f546b7e950680f2a3acd369195974c93  # [win]
+  sha256: d4d635b6a29a0842a9f3d622c08e3db48d9e346f79b92a20906dd0c0c29c7d1c  # [win]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
-  sha256: 13f1a205adf3e311b8595ad534796e5a3bc82a9c6c7eeb104b969ae7e609589f  # [osx]
+  sha256: 13809f3272558b91a95414bab74fc2c1636bce6c1dcc42e287763157edceb74c  # [osx]
 
 build:
   number: 0
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-jsonlite
@@ -30,7 +30,7 @@ requirements:
     - r-jsonlite
 
 test:
- commands:
+  commands:
     - $R -e "library('catboost')"  # [not win]
     - "\"%R%\" -e \"library('catboost')\""  # [win].
 
@@ -39,7 +39,7 @@ about:
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'CatBoost is a machine learning algorithm that uses gradient boosting on decision trees. It is available as an open source library.'
+  summary: CatBoost is a machine learning algorithm that uses gradient boosting on decision trees. It is available as an open source library.
   doc_url: https://tech.yandex.com/catboost/doc/dg/concepts/about-docpage/
 
 extra:
