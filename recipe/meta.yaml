@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/catboost/catboost
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
   summary: CatBoost is a machine learning algorithm that uses gradient boosting on decision trees. It is available as an open source library.
