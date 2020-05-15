@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "0.23" %}
+{% set version = "0.23.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -8,16 +8,16 @@ package:
 
 source:
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Linux-{{ version }}.tgz  # [linux]
-  sha256: 9babc69059bd880db39d410722053f8bdd142c7d2731fe95f28fb7757fc588a4  # [linux]
+  sha256: 69d5477be2e6e516d2febb8cf72d8fa8108753836c1d8f27d276bf06b25e98b2  # [linux]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Windows-{{ version }}.tgz  # [win]
-  sha256: d4d635b6a29a0842a9f3d622c08e3db48d9e346f79b92a20906dd0c0c29c7d1c  # [win]
+  sha256: 1068178d9a8657b002f38fc3733f35bef506ff8295ea093e39de2acfd2a52e35  # [win]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
-  sha256: 13809f3272558b91a95414bab74fc2c1636bce6c1dcc42e287763157edceb74c  # [osx]
+  sha256: df2ddc4b24d5b9ab22d2fe8db3577558dc96163a44ed65e0ce90f16f8b720e23  # [osx]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/catboost/catboost
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
   summary: CatBoost is a machine learning algorithm that uses gradient boosting on decision trees. It is available as an open source library.
