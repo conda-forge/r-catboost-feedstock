@@ -14,3 +14,6 @@ r_base:
 - '4.0'
 target_platform:
 - linux-64
+zip_keys:
+- - cdt_name
+  - docker_image
