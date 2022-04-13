@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
