@@ -14,7 +14,7 @@ source:
   sha256: c9fc07a6bb4e6c250c8e6bcb5bbd2da439933eb62ece09de40e1e0c7a1d8e280  # [win]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-Darwin-{{ version }}.tgz  # [osx]
-  sha256: 149229968849f494117903720fa06551c3b9d7b656323105bf0b9495f28fcb2c  # [osx]
+  sha256: 3266728dff0d99ed219f736c5bbe5325f5b163dd489b9600a4e55187541e4172  # [osx]
 
 build:
   number: 0
