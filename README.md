@@ -1,11 +1,11 @@
-About r-catboost
-================
+About r-catboost-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-catboost-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/catboost/catboost
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-catboost-feedstock/blob/main/LICENSE.txt)
 
 Summary: CatBoost is a machine learning algorithm that uses gradient boosting on decision trees. It is available as an open source library.
 
