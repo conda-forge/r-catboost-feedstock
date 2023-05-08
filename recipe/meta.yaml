@@ -30,6 +30,8 @@ requirements:
     - r-jsonlite
 
 test:
+  requires:
+    - r-testthat
   commands:
     - $R -e "library('catboost')"                          # [not win]
     - $R -e "testthat::test_package('catboost')"           # [not win]
