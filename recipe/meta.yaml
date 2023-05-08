@@ -34,7 +34,7 @@ test:
     - r-caret
     - r-testthat
     - r-tibble
-  sourc_files:
+  source_files:
     - tests/testthat/
   commands:
     - $R -e "library('catboost')"                                                                        # [not win]
