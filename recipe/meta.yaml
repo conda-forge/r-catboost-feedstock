@@ -34,11 +34,15 @@ test:
     - r-caret
     - r-testthat
     - r-tibble
+  sourc_files:
+    - tests/testthat/
   commands:
-    - $R -e "library('catboost')"                          # [not win]
-    - $R -e "testthat::test_package('catboost')"           # [not win]
-    - "\"%R%\" -e \"library('catboost')\""                 # [win]
-    - "\"%R%\" -e \"testthat::test_package('catboost')\""  # [win]
+    - $R -e "library('catboost')"                                                                        # [not win]
+    - $R -e "library('catboost');testthat::test_file('tests/testthat/test_model.R')"                     # [not win]
+    - $R -e "library('catboost');testthat::test_file('tests/testthat/test_on_trimmed_adult_dataset.R')"  # [not win]
+    - "\"%R%\" -e \"library('catboost')\""                                                                        # [win]
+    - "\"%R%\" -e \"library('catboost');testthat::test_file('tests/testthat/test_model.R')\""                     # [win]
+    - "\"%R%\" -e \"library('catboost');testthat::test_file('tests/testthat/test_on_trimmed_adult_dataset.R')\""  # [win]
 
 about:
   home: https://github.com/catboost/catboost
