@@ -31,8 +31,10 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('catboost')"  # [not win]
-    - "\"%R%\" -e \"library('catboost')\""  # [win].
+    - $R -e "library('catboost')"                          # [not win]
+    - $R -e "testthat::test_package('catboost')"           # [not win]
+    - "\"%R%\" -e \"library('catboost')\""                 # [win]
+    - "\"%R%\" -e \"testthat::test_package('catboost')\""  # [win]
 
 about:
   home: https://github.com/catboost/catboost
