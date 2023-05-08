@@ -31,7 +31,9 @@ requirements:
 
 test:
   requires:
+    - r-caret
     - r-testthat
+    - r-tibble
   commands:
     - $R -e "library('catboost')"                          # [not win]
     - $R -e "testthat::test_package('catboost')"           # [not win]
