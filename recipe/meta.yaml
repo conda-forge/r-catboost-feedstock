@@ -21,7 +21,7 @@ source:
 
 build:
   number: 1
-  # TODO: support Linux on ppc64le
+  # TODO: support Linux on ppc64le: https://github.com/catboost/catboost/issues/1755
   skip: True  # [ppc64le]
 
 requirements:
