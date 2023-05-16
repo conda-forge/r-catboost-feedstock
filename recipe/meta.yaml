@@ -21,6 +21,8 @@ source:
 
 build:
   number: 1
+  # TODO: support Linux on ppc64le
+  skip: True  # [ppc64le]
 
 requirements:
   build:
