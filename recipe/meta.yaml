@@ -21,6 +21,8 @@ build:
 
 requirements:
   build:
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-jsonlite                 # [build_platform != target_platform]
     - {{ posix }}zip               # [win]
   host:
     - r-base
