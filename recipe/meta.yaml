@@ -17,10 +17,10 @@ source:
   sha256: 268ad9a5287306d378ef80bf361bc1064a7e27a48b48bba9ea247e9923402cb1  # [win and x86_64]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-darwin-universal2-{{ version }}.tgz  # [osx]
-  sha256: 5be7664f6422902cdb8d5ea2db9514baee3ffcd964d23a86596656c8347f4cdf  # [osx]
+  sha256: a563d8e3481ca0ce0acec665fd5203262b078601db9957a0852615d56eda498c  # [osx]
 
 build:
-  number: 0
+  number: 1
   # TODO: support Linux on ppc64le: https://github.com/catboost/catboost/issues/1755
   skip: true  # [ppc64le]
 
