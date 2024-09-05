@@ -1,5 +1,5 @@
 {% set name = "r-catboost" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -8,19 +8,19 @@ package:
 
 source:
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-linux-x86_64-{{ version }}.tgz  # [linux and x86_64]
-  sha256: 4ba51527a853ec82b71450ab885298bd212f24bb8e8249645b298b966c3d75a1  # [linux and x86_64]
+  sha256: c56beafb3a485326b0f51ee4b80301b3a056aa76b2b6e6e10f5f606227f908dc  # [linux and x86_64]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-linux-aarch64-{{ version }}.tgz  # [linux and aarch64]
-  sha256: 1a21dc57b3c828cfc35cc68d99a84fcb0995cde5650f9eb4e08a3d661bca3387  # [linux and aarch64]
+  sha256: 6067cdc5adf3cd3be98a08d6bb9f584b4e4cd1a18bb9bf255c38aa196ce501eb  # [linux and aarch64]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-windows-x86_64-{{ version }}.tgz  # [win and x86_64]
-  sha256: 68fc887dea4b8026a895add3ee56a3adfb6161a9d9635a3845bfc01f8b093667  # [win and x86_64]
+  sha256: 9e74db69752baeda239ba48e8ae4b8f08a4c9a15ec344aa0eb0c7ee5f528ed7f  # [win and x86_64]
 
   url: https://github.com/catboost/catboost/releases/download/v{{ version }}/catboost-R-darwin-universal2-{{ version }}.tgz  # [osx]
-  sha256: b8ede24c112cc98a8fbf2ff28d6e0b503c7cd7ebf12645c9d5e0279e10f42cfd  # [osx]
+  sha256: 4bf77a01281e90c83b2cb2ad87f8f376cb77bf66195e02a247c11051afa6f382  # [osx]
 
 build:
-  number: 1
+  number: 0
   # TODO: support Linux on ppc64le: https://github.com/catboost/catboost/issues/1755
   skip: true  # [ppc64le]
 
