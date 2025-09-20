@@ -20,7 +20,7 @@ source:
   sha256: 26f14ac491ad1138663dde64bc3b270212d1804eb1c33eee3fdead26487d8bc1  # [osx]
 
 build:
-  number: 0
+  number: 1
   # TODO: support Linux on ppc64le: https://github.com/catboost/catboost/issues/1755
   skip: true  # [ppc64le]
 
